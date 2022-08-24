@@ -26,7 +26,6 @@ export default function WelcomePage(){
                     </Typography>
                 </Stack>
             </Grid>
-            TEST
             
         </Grid>
     </div>
