@@ -12,11 +12,13 @@ export default function WelcomePage(){
             <Grid item xs={12} md={5}>
                 <img src="img/boxOutside.png" alt="box" width="90%" height="90%" style={{marginLeft: '100px'}}/>
             </Grid>
-
+            
+            <img src="img/decor_1.png" alt="box" width="15%" style={{marginTop: 0, position: 'absolute', right: 10, top: 0}}/>
+            
             <Grid item xs={12} md={7} style={{marginTop: '100px'}}>
                 <Stack direction="column">
                     <Typography inline color="#454545" style={{fontSize:"80px"}} >
-                        Hey, I'm <b style={{color:"#797EF6"}}>Joyce,</b>
+                        Hi I'm <b style={{color:"#797EF6"}}>Joyce,</b>
                     </Typography>
                     <Typography color="#454545" style={{fontSize:"36px", marginTop: '-20px'}} >
                         An aspiring <b style={{color:"#4ADEDE"}}>software engineer</b>
@@ -26,7 +28,6 @@ export default function WelcomePage(){
                     </Typography>
                 </Stack>
             </Grid>
-            
         </Grid>
     </div>
 }

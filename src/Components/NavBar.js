@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 
 export default function NavBar(){
     return <div>
-        <AppBar elevation={0} sx={{bgcolor: 'white'}}>
+        <AppBar elevation={0} sx={{bgcolor: 'rgba(52, 52, 52, 0.0)'}}>
             <Toolbar>
                 <Link href="#" variant="h6" underline="none" sx={{ color: "#797EF6", marginLeft: '20px'}}>
                     Joyce Zhang
