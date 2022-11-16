@@ -29,8 +29,8 @@ export default function AboutPage(){
                 </Container>
             </Grid>
 
-            <Grid item xs={12} md={5} xl={5}>
-                <img src="img/laptop_decor.png" alt="Laptop" style={{position: "absolute", margin: 0, marginTop: 10, marginLeft: 90}}/>
+            <Grid item xs={12} md={5} xl={6}>
+                <img src="img/laptop_decor.png" alt="Laptop"/>
             </Grid>
         </Grid>
     </div>

@@ -7,23 +7,40 @@ import Box from '@mui/material/Box';
 
 export default function NavBar(){
     return <div>
-        <AppBar  elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 100)'}}>
+        <AppBar  elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 255)'}}>
             <Toolbar>
                 <Box sx={{ flexGrow: 1}}>
-                    <Link href="#" variant="h6" underline="none" sx={{ color: "#797EF6", marginLeft: '20px'}}>
+                    <Link href="#" fontSize="2vw" underline="none" sx={{ color: "#797EF6", marginLeft: '20px', fontWeight: '500'}}>
                         Joyce Zhang
                     </Link>
                 </Box>
 
-                <Link href="#" variant="h6" underline="none" sx={{color: "#797EF6",  marginLeft: '20px'}}>
+                <Link className="test" href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',    
+                    '&:hover':{
+                        transition: '0.3s',
+                        borderBottom: '3px solid #797EF6',
+                    }
+                }}>
                     About
                 </Link>
 
-                <Link href="#" variant="h6" underline="none" sx={{color: "#797EF6",  marginLeft: '20px'}}>
+                <Link href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',
+                    '&:hover':{
+                        transition: '0.3s',
+                        borderBottom: '3px solid #4ADEDE',
+                    }
+            
+                }}>
                     Portfolio
                 </Link>
 
-                <Link href="#" variant="h6" underline="none" sx={{color: "#797EF6",  marginLeft: '20px'}}>
+                <Link href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',
+                    '&:hover':{
+                        transition: '0.3s',
+                        borderBottom: '3px solid #797EF6',
+                    }
+            
+                }}>
                     Contact
                 </Link>
 

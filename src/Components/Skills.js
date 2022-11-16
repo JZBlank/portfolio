@@ -5,7 +5,9 @@ import { Container } from '@mui/system';
 const skillInfo = 
     <div>
         <Container sx={{height: '100px', bgcolor: 'red'}}>
-            <Typography sx={{top: '100px'}}>Test</Typography>
+            <Container sx={{margin: 'auto', padding: '10px', top: '60px', height:'20px', width: '40px', bgcolor: 'blue' }}>
+                <Typography sx={{top: '100px', textAlign: 'center'}}>Test</Typography>
+            </Container>
         </Container>
 
     </div>;
@@ -13,15 +15,15 @@ const skillInfo =
 export default function Skills(){
     return <div>
         <Grid container spacing= {2} position= 'relative' sx={{top:'200px'}}>
-            <Grid xs={1} md={4}>
+            <Grid xs={12} md={4}>
                 {skillInfo}
             </Grid>
 
-            <Grid xs={1} md={4}>
+            <Grid xs={12} md={4}>
                 {skillInfo}
             </Grid>
 
-            <Grid xs={1} md={4}>
+            <Grid xs={12} md={4}>
                 {skillInfo}
             </Grid>
 

@@ -17,15 +17,17 @@ export default function WelcomePage(){
             
             <img src="img/decor_1.png" alt="box" width="15%" style={{marginTop: 0, position: 'absolute', right: 10, top: 0}}/>
             
-            <Grid item xs={12} md={7} lg={5} style={{marginTop: '100px'}}>
+            <img src="img/decor_2.png" alt="box" width="35%" style={{marginTop: 0, position: 'absolute', right: 0, top: 300}}/>
+
+            <Grid item xs={12} md={7} lg={5} style={{marginTop: '100px', padding: '50px'}}>
                 <Stack direction="column">
-                    <Typography inline color="#454545" style={{fontSize:"80px"}} >
+                    <Typography inline color="#454545" style={{fontSize:"4vw"}} >
                         Hi I'm <b style={{color:"#797EF6"}}>Joyce,</b>
                     </Typography>
-                    <Typography color="#454545" style={{fontSize:"36px", marginTop: '-20px'}} >
-                        An aspiring <b style={{color:"#4ADEDE"}}>software engineer</b>
+                    <Typography color="#454545" style={{fontSize:"2vw", marginTop: '-5px'}} >
+                        an aspiring <b style={{color:"#4ADEDE"}}>software engineer</b>
                     </Typography>
-                    <Typography variant="h4" color="#454545" style={{fontSize:"36px", marginTop: '-10px'}} >
+                    <Typography variant="h4" color="#454545" style={{fontSize:"2vw", marginTop: '2px'}} >
                         who loves thinking outside the box.
                     </Typography>
                 </Stack>
