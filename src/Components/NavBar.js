@@ -3,14 +3,17 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
 
 export default function NavBar(){
     return <div>
-        <AppBar elevation={0} sx={{bgcolor: 'rgba(52, 52, 52, 0.0)'}}>
+        <AppBar  elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 100)'}}>
             <Toolbar>
-                <Link href="#" variant="h6" underline="none" sx={{ color: "#797EF6", marginLeft: '20px'}}>
-                    Joyce Zhang
-                </Link>
+                <Box sx={{ flexGrow: 1}}>
+                    <Link href="#" variant="h6" underline="none" sx={{ color: "#797EF6", marginLeft: '20px'}}>
+                        Joyce Zhang
+                    </Link>
+                </Box>
 
                 <Link href="#" variant="h6" underline="none" sx={{color: "#797EF6",  marginLeft: '20px'}}>
                     About
@@ -23,6 +26,7 @@ export default function NavBar(){
                 <Link href="#" variant="h6" underline="none" sx={{color: "#797EF6",  marginLeft: '20px'}}>
                     Contact
                 </Link>
+
             </Toolbar>
         </AppBar>
     </div>;

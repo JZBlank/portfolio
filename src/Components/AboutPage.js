@@ -23,7 +23,7 @@ export default function AboutPage(){
                     </Typography>
                     <Typography inline color="#454545" style={{fontSize:"20px", marginLeft: 20}} >
                         I am a senior studying Computer Science at CUNY Hunter College. 
-                        Currently, I am actively looking for my first full-time job and internships during my last two
+                        Currently, I am actively looking for my first full-time job during my last two
                         semesters at Hunter College. 
                     </Typography>
                 </Container>
