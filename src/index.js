@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar';
 import WelcomePage from './Components/WelcomePage';
 import AboutPage from './Components/AboutPage';
 import Skills from './Components/Skills';
+import Projects from './Components/Projects';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <WelcomePage />
     <AboutPage />
     <Skills />
+    <Projects />
   </React.StrictMode>
 );
 
