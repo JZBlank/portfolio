@@ -5,46 +5,38 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
+function NavbarText(props){
+    return <Link 
+                href="#" 
+                fontSize="2vw" 
+                underline="none" 
+                sx={{
+                    color: props.wordColor,  
+                    marginLeft: '20px',    
+                    '&:hover':{
+                        transition: '0.3s',
+                        borderBottom: props.wordUnderline
+                    }
+                }}>
+                    {props.word}
+            </Link>
+}
+
+
+
 export default function NavBar(){
     return <div>
-        <AppBar  elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 255)'}}>
+        <AppBar elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 255)'}}>
             <Toolbar>
                 <Box sx={{ flexGrow: 1}}>
-                    <Link href="#" fontSize="2vw" underline="none" sx={{ color: "#797EF6", marginLeft: '20px', fontWeight: '500'}}>
-                        Joyce Zhang
-                    </Link>
+                    <NavbarText word="Joyce Zhang" wordColor="#797EF6" wordUnderline= "0px solid #4ADEDE"></NavbarText>
                 </Box>
 
-                <Link className="test" href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',    
-                    '&:hover':{
-                        transition: '0.3s',
-                        borderBottom: '3px solid #797EF6',
-                    }
-                }}>
-                    About
-                </Link>
-
-                <Link href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',
-                    '&:hover':{
-                        transition: '0.3s',
-                        borderBottom: '3px solid #4ADEDE',
-                    }
-            
-                }}>
-                    Portfolio
-                </Link>
-
-                <Link href="#" fontSize="2vw" underline="none" sx={{color: "#000000",  marginLeft: '20px',
-                    '&:hover':{
-                        transition: '0.3s',
-                        borderBottom: '3px solid #797EF6',
-                    }
-            
-                }}>
-                    Contact
-                </Link>
+                <NavbarText word="About" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
+                <NavbarText word="Portfolio" wordColor="#454545" wordUnderline= "3px solid #4ADEDE"></NavbarText>
+                <NavbarText word="Contact" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
 
             </Toolbar>
         </AppBar>
-    </div>;
+    </div>
 }
