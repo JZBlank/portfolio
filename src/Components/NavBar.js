@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 
 function NavbarText(props){
     return <Link 
-                href="#" 
+                href={props.move}
                 fontSize="2vw" 
                 underline="none" 
                 sx={{
@@ -23,7 +23,6 @@ function NavbarText(props){
 }
 
 
-
 export default function NavBar(){
     return <div>
         <AppBar elevation={0} sx={{bgcolor: 'rgba(255, 255, 255, 255)'}}>
@@ -32,9 +31,9 @@ export default function NavBar(){
                     <NavbarText word="Joyce Zhang" wordColor="#797EF6" wordUnderline= "0px solid #4ADEDE"></NavbarText>
                 </Box>
 
-                <NavbarText word="About" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
-                <NavbarText word="Portfolio" wordColor="#454545" wordUnderline= "3px solid #4ADEDE"></NavbarText>
-                <NavbarText word="Contact" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
+                <NavbarText move="#_aboutSection" word="About" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
+                <NavbarText move="#_portfolioSection" word="Portfolio" wordColor="#454545" wordUnderline= "3px solid #4ADEDE"></NavbarText>
+                <NavbarText move="#_contactSection" word="Contact" wordColor="#454545" wordUnderline= "3px solid #797EF6"></NavbarText>
 
             </Toolbar>
         </AppBar>

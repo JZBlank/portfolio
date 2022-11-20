@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid'; // Grid version 1
 
 
 export default function Projects(){
-    return <div>
+    return <div id="_portfolioSection" >
         <Typography sx={{marginTop: '100px', fontSize: '3vw', textAlign: 'center'}}>Projects</Typography>
 
         <Grid container spacing={1} sx={{top:'100px', textAlign: 'center'}}>

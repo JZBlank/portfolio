@@ -14,7 +14,7 @@ function CardInfo(props) {
 }
 
 function CardRow(){
-    return <Grid container sx={{marginTop: '50px', paddingBottom: '50px'}}>
+    return <Grid id="_contactSection" container sx={{marginTop: '50px', paddingBottom: '50px'}}>
                 <CardInfo
                     imgUrl="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
                     linkURL="mailto:joycezhang2065@gmail.com"
