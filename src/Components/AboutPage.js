@@ -10,7 +10,7 @@ import Grid from '@mui/material/Grid';
 export default function AboutPage(){
     return <div>
 
-         <Box id="_aboutSection" sx={{height: 100}}></Box> 
+        <Box id="_aboutSection" sx={{height: 100}}></Box> 
 
         <Grid container spacing= {2}>
             <Grid item xs={12} md={6} xl={5}>
