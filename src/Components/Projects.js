@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Hidden, Typography, Box } from '@mui/material'
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid'; // Grid version 1
 
@@ -16,8 +16,8 @@ function ProjectInfo(props){
         </Grid>
 }
 
-function ProjectGrid(){
-    return <Grid container spacing={1} sx={{top:'100px', textAlign: 'center'}}>
+function ProjectSoloGrid(){
+    return <Grid container spacing={1} sx={{top:'20px', textAlign: 'center', position: 'absolute'}}>
                 <ProjectInfo
                     name=""
                     imgLink="img/cat_game.png">
@@ -31,11 +31,28 @@ function ProjectGrid(){
             </Grid>
 }
 
+function ProjectGroupGrid(){
+    return <Grid container spacing={1} sx={{ textAlign: 'center', position: 'absolute'}}>
+            <ProjectInfo
+                name=""
+                imgLink="img/laptop_decor.png">
+            </ProjectInfo>
+
+            <ProjectInfo
+                name="test"
+                imgLink="img/laptop_decor.png">
+            </ProjectInfo>
+
+        </Grid>
+}
+
 
 export default function Projects(){
-    return <div id="_portfolioSection" >
-        <Typography sx={{marginTop: '100px', fontSize: '3vw', textAlign: 'center'}}>Projects</Typography>
-        <ProjectGrid></ProjectGrid>
+    return <div id="_portfolioSection">
+        <Typography sx={{width: '100%', marginTop: '100px', fontSize: '3vw', textAlign: 'center', position: 'relative'}}>Projects</Typography>
+        <ProjectSoloGrid></ProjectSoloGrid>
+        <ProjectGroupGrid></ProjectGroupGrid>
+        <Box height="100px"></Box>
 
     </div>
 }

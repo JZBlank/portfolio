@@ -5,7 +5,7 @@ import { Container } from '@mui/system';
 
 export default function Skills(){
     return <div>
-        <Grid container spacing= {2} position= 'relative' sx={{top:'100px', textAlign: 'center'}}>
+        <Grid container spacing= {2} sx={{top:'100px', textAlign: 'center', position: 'relative'}}>
             <Grid xs={12} md={4}>
                 <Container sx={{height: '500px'}}>
                     <Container sx={{top: '100px', margin: 'auto', padding: '10px', top: '60px', height:'35%', width: '70%', border: '7px solid #797EF6', bgcolor: '#EDEDED' }}>
