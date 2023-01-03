@@ -1,57 +1,49 @@
 import { Hidden, Typography, Box } from '@mui/material'
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid'; // Grid version 1
+import { Opacity } from '@material-ui/icons';
 
 function ProjectInfo(props){
-    return <Grid xs={12} md={6}>
-            <Container sx={{marginTop: '50px', height: '400px'}}>
-                <img src={props.imgLink} width="100%" height="90%" 
-                    sx={{
-                        "&:hover":{
-                            transition: '0.3s',
-                            opacity: 1
-                        }
-                    }}></img>
+    return <Grid xs={12} md={12}>
+        <Container sx={{marginTop: '50px', height: '150px', border: '5px solid #797EF6', textAlign: 'left'}}>
+            <Container sx={{marginTop: '5px', height: '130px', border: '5px solid red', textAlign: 'left'}}>
+                <Grid container spacing={1}>
+                    <Grid xs={12} md={3}>
+                        <Container sx={{backgroundColor: '#4ADEDE', width: "100px", height: '100px', margin: '0'}}></Container>
+                    </Grid>
+
+                    <Grid xs={12} md={9}>
+                        <Typography>{props.name}</Typography>
+                    </Grid>
+                </Grid>
             </Container>
-        </Grid>
+        </Container>
+    </Grid>
+        
+        
 }
 
 function ProjectSoloGrid(){
-    return <Grid container spacing={1} sx={{top:'20px', textAlign: 'center', position: 'absolute'}}>
+    return <Grid container spacing={1} sx={{top:'20px'}}>
                 <ProjectInfo
-                    name=""
+                    name="Cat Game"
                     imgLink="img/cat_game.png">
                 </ProjectInfo>
 
                 <ProjectInfo
-                    name="test"
+                    name="Bikery"
                     imgLink="img/bike_website.png">
                 </ProjectInfo>
 
             </Grid>
 }
 
-function ProjectGroupGrid(){
-    return <Grid container spacing={1} sx={{ textAlign: 'center', position: 'absolute'}}>
-            <ProjectInfo
-                name=""
-                imgLink="img/laptop_decor.png">
-            </ProjectInfo>
-
-            <ProjectInfo
-                name="test"
-                imgLink="img/laptop_decor.png">
-            </ProjectInfo>
-
-        </Grid>
-}
 
 
 export default function Projects(){
     return <div id="_portfolioSection">
         <Typography sx={{width: '100%', marginTop: '100px', fontSize: '3vw', textAlign: 'center', position: 'relative'}}>Projects</Typography>
         <ProjectSoloGrid></ProjectSoloGrid>
-        <ProjectGroupGrid></ProjectGroupGrid>
         <Box height="100px"></Box>
 
     </div>
