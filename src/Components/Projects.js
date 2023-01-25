@@ -1,39 +1,69 @@
-import { Hidden, Typography, Box } from '@mui/material'
+import { Hidden, Typography, Box, colors } from '@mui/material'
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid'; // Grid version 1
 import { Opacity } from '@material-ui/icons';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
+
 
 function ProjectInfo(props){
-    return <Grid xs={12} md={12}>
-        <Container sx={{marginTop: '50px', height: '150px', border: '5px solid #797EF6', textAlign: 'left'}}>
-            <Container sx={{marginTop: '5px', height: '130px', border: '5px solid red', textAlign: 'left'}}>
-                <Grid container spacing={1}>
-                    <Grid xs={12} md={3}>
-                        <Container sx={{backgroundColor: '#4ADEDE', width: "100px", height: '100px', margin: '0'}}></Container>
-                    </Grid>
+      return <Card sx={{ maxWidth: 345, margin: '10px' }}>
+          <CardMedia/>
+          <img src={props.imgLink} alt={props.name} style={{height: '190px', objectFit:"fit", justifyContent: 'center'}}/>
+          <CardContent style={{backgroundColor:"#797EF6"}}>
+            <Typography gutterBottom variant="h5" component="div">
+              {props.name}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {props.description}
+            </Typography>
+          </CardContent>
+          <CardActions style={{backgroundColor:"#797EF6", height:"50px"}}>
+          <Link href= {props.link1} underline="none" target="_blank">
+            <Button style={{backgroundColor:"#4ADEDE"}} variant="contained" size="small">
+                <Typography color="white">{props.button1}</Typography>
+            </Button>
+            </Link>
 
-                    <Grid xs={12} md={9}>
-                        <Typography>{props.name}</Typography>
-                    </Grid>
-                </Grid>
-            </Container>
-        </Container>
-    </Grid>
-        
-        
+            <Link href={props.link1} underline="none" target="_blank">
+                <Button size="small" style={{marginLeft: "10px"}}>
+                    <Typography color="white">Learn More</Typography>
+                </Button>
+            </Link>
+          </CardActions>
+        </Card>
 }
 
 function ProjectSoloGrid(){
-    return <Grid container spacing={1} sx={{top:'20px'}}>
+    return <Grid container spacing={1} sx={{marginTop: '50px', justifyContent: 'center'}}>
                 <ProjectInfo
                     name="Cat Game"
-                    imgLink="img/cat_game.png">
+                    imgLink="img/java_game.png"
+                    description="2D Cat Game"
+                    button1="View Code"
+                    link1="https://github.com/JZBlank/My2DGame">
                 </ProjectInfo>
 
                 <ProjectInfo
                     name="Bikery"
-                    imgLink="img/bike_website.png">
+                    imgLink="img/bike_website.png"
+                    description="Bikery is a fully responsive website."
+                    button1="Visit Website"
+                    link1="https://jzblank.github.io/microcredential/project2_Zhang/project2.html">
                 </ProjectInfo>
+
+                <ProjectInfo
+                    name="Climate Change"
+                    imgLink="img/climate_website.png"
+                    description="Climate change website"
+                    button1="Visit Website"
+                    link1="https://jzblank.github.io/microcredential/project1_Zhang/project1.html">
+                </ProjectInfo>
+                
 
             </Grid>
 }

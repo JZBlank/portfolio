@@ -18,6 +18,10 @@ const theme = createTheme({
       fontFamily: 'Montserrat'
     },
   },
+  color: {
+    primary: "red",
+    secondary: "#797EF6"
+  }
 });
 
 
