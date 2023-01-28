@@ -1,7 +1,9 @@
-import { Typography, Container } from '@mui/material';
+import { Typography, Container, TextField } from '@mui/material';
 import Grid from '@mui/material/Grid'; // Grid version 1
 import Paper from '@mui/material/Paper';
 import Link from '@mui/material/Link';
+import {useState} from "react";
+import React from 'react';
 
 function CardInfo(props) {
     return <Grid item sm={12} md={4} sx={{textAlign: props.position}}>
@@ -38,9 +40,58 @@ function CardRow(){
             </Grid>
 }
 
+function ContactTextFields(props){
+    const [firstname, setFirstName] = useState("");
+    const [lastname, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+
+    return <Grid item sm={12} md={props.width} sx={{padding:"10px"}}>
+                <Typography>{props.text}</Typography>
+                <TextField fullWidth id="outlined-basic" variant="outlined" multiline={props.mssg} rows={props.lineNum} size="small"></TextField>
+            </Grid>
+}
+
+function AllTextFields(){
+    return <Grid container space={1} justifyContent= "center" margin="center" sx={{paddingLeft: "100px", paddingRight: "100px"}}>
+                <ContactTextFields fieldName="firstname" text="First Name" mssg="False" lineNum="1" width="6"></ContactTextFields>
+                <ContactTextFields fieldName="lastname" text="Last Name" mssg="False" lineNum="1" width="6"></ContactTextFields>
+                <ContactTextFields fieldName="email"text="Email" mssg="False" lineNum="1" width="12"></ContactTextFields>
+                <ContactTextFields text="Message" mssg="True" lineNum="5" width="12"></ContactTextFields>
+            </Grid>
+
+
+
+}
+
+function SendEmail() {
+    const [name, setName] = useState("");
+  
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert(`The name you entered was: ${name}`);
+    }
+  
+    return (
+      <form onSubmit={handleSubmit}>
+        <label>Enter your name:
+          <input 
+            type="text" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <input type="submit" />
+      </form>
+    )
+  }
+
 export default function Contact(){
     return <div>
-        <Typography sx={{fontSize: '3vw', textAlign: 'center'}}>Keep in Touch!</Typography>
+        <Typography sx={{fontSize: '3vw', textAlign: 'center', paddingBottom:"30px"}}>Contact Me</Typography>
+        <AllTextFields></AllTextFields>
+        <SendEmail></SendEmail>
         <CardRow></CardRow>
     </div>
 }
