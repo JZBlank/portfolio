@@ -83,27 +83,27 @@ function EmailContactForm(){
     return <Grid space={0} justifyContent= "center" sx={{paddingLeft: "25%", paddingRight: "25%"}}>
             <form ref={form} onSubmit={sendEmail}>
               <Grid sm={12} md={12} >
-                    <Typography>Name</Typography>
+                    <Typography float="left" width="fit-content">Name *</Typography>
                     <TextField fullWidth id="outlined-basic" variant="outlined" multiline={false} rows={1} size="small" 
                           name="from_name" value={name} onChange={(e) => setName(e.target.value)}></TextField>
               </Grid>
 
 
               <Grid item sm={12} md={12}>
-                  <Typography>Email</Typography>
+                  <Typography>Email *</Typography>
                   <TextField fullWidth id="outlined-basic" variant="outlined" multiline={false} rows={1} size="small" 
                         name="from_name" value={email} onChange={(e) => setEmail(e.target.value)}></TextField>
               </Grid>
 
 
               <Grid item sm={12} md={12}>
-                  <Typography>Message</Typography>
+                  <Typography>Message * </Typography>
                   <TextField fullWidth id="outlined-basic" variant="outlined" multiline={true} rows={5} size="small" 
                         name="message" value={message} onChange={(e) => setMessage(e.target.value)}></TextField>
               </Grid>
 
               <Grid item sm={12} md={12} sx={{marginTop: "20px", textAlign: "right"}}>
-                <Button variant="contained" type="submit" size="big">Submit</Button>
+                <Button variant="contained" type="submit" size="big">Send</Button>
               </Grid>
             
             </form>
