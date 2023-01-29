@@ -11,7 +11,7 @@ export default function WelcomePage(){
     return <div>
         <Grid container spacing= {2} style={{marginTop: '70px'}}>
             <Grid item xs={12} md={5} lg={5}>
-                <img src="img/boxOutside.png" alt="box" width="90%" height="90%" style={{marginLeft: '100px'}}/>
+                <img src="img/boxOutside.png" alt="box" width="90%" height="90%"/>
             </Grid>
             
             <img src="img/decor_1.png" alt="box" width="15%" style={{marginTop: 0, position: 'absolute', right: 10, top: 0}}/>

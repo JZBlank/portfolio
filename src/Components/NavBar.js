@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 function NavbarText(props){
     return <Link 
                 href={props.move}
-                fontSize="2vw" 
+                fontSize="20px" 
                 underline="none" 
                 sx={{
                     color: props.wordColor,  
