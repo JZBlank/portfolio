@@ -78,7 +78,7 @@ function EmailContactForm(){
 
 export default function Contact(){
     return <div>
-        <Typography sx={{fontSize: '25px', textAlign: 'center', paddingBottom:"30px"}}>Let's Connect!</Typography>
+        <Typography sx={{fontSize: '25px', textAlign: 'center', paddingBottom:"30px"}}>Contact Me</Typography>
         <EmailContactForm></EmailContactForm>
     </div>
 }

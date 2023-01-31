@@ -59,10 +59,10 @@ export default function Footer(){
 
     return <div>
         <Container maxWidth style={{background:"black", height:"220px"}}>
-            <Typography style={{color:"white", textAlign:"center", paddingTop: "50px"}}>Find me on</Typography>
+            <Typography style={{color:"white", textAlign:"center", paddingTop: "15px"}}>Let's Connect!</Typography>
             <CardRow></CardRow>
             <Container maxWidth style={{borderTop:"1px solid gray", height:"10px"}}>
-                <Typography style={{color:"white", textAlign:"center", paddingTop: "20px"}}>© JOYCE ZHANG 2023</Typography>
+                <Typography style={{color:"white", textAlign:"center", paddingTop: "30px"}}>© JOYCE ZHANG 2023</Typography>
             </Container>
         </Container>
     </div>

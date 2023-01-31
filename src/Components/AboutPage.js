@@ -21,6 +21,7 @@ export default function AboutPage(){
                     <Typography inline color="#454545" gutterBottom style={{fontSize:"50px", width: "50%", marginLeft: 20}}>
                         About <b style={{color:"#797EF6"}}>Me</b>
                     </Typography>
+
                     <Typography inline color="#454545" style={{fontSize:"20px", marginLeft: 20}} >
                         I am a senior studying Computer Science at CUNY Hunter College. 
                         Currently, I am actively looking for an entry-level software engineer job.
