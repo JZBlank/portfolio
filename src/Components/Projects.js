@@ -72,7 +72,7 @@ function ProjectSoloGrid(){
 
 export default function Projects(){
     return <div id="_portfolioSection">
-        <Typography sx={{width: '100%', marginTop: '100px', fontSize: '3vw', textAlign: 'center', position: 'relative'}}>Projects</Typography>
+        <Typography sx={{width: '100%', marginTop: '100px', fontSize: '30px', textAlign: 'center', position: 'relative'}}>Projects</Typography>
         <ProjectSoloGrid></ProjectSoloGrid>
         <Box height="100px"></Box>
 

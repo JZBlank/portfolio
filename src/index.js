@@ -8,6 +8,7 @@ import AboutPage from './Components/AboutPage';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 import reportWebVitals from './reportWebVitals';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles'; 
@@ -35,6 +36,7 @@ root.render(
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </ThemeProvider>
   </React.StrictMode>
 );
